@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews</title>
+</head>
+<body>
+<h1>Our Reviews</h1>
+{% for r in revs %}
+<div>
+    <h3>{{r.title}}</h3>
+    <p> {{r.review}}
+     -  {{r.name}}
+    </p>
+    <p>{{r.createdDate}}</p>
+</div>
+{% endfor %}
+</body>
+</html>
